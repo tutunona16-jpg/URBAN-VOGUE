@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URBAN VOGUE | Fashion & Jewellery</title>
+  <meta name="description" content="Discover elegant women's clothing and jewellery at URBAN VOGUE. Shop your style.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Announcement -->
+  <div class="announcement">
+    YOUR STYLE, YOUR STORY ✨
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="logo">URBAN <span>VOGUE</span></a>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#clothing">Clothing</a>
+      <a href="#jewellery">Jewellery</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button class="cart-button" onclick="toggleCart()">
+      Bag (<span id="cart-count">0</span>)
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">THE NEW COLLECTION</p>
+        <h1>Elegance in<br>Every <em>Detail.</em></h1>
+        <p class="hero-description">
+          Discover your signature style with timeless fashion
+          and jewellery made to make you shine.
+        </p>
+        <a href="#clothing" class="btn">SHOP COLLECTION &rarr;</a>
+      </div>
+      <div class="hero-image"></div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories section">
+      <div class="section-heading">
+        <p class="eyebrow">EXPLORE OUR WORLD</p>
+        <h2>Find Your Style</h2>
+      </div>
+
+      <div class="category-grid">
+        <a href="#clothing" class="category-card">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=850&q=85" alt="Women's fashion">
+          <span>Women's Wear <b>↗</b></span>
+        </a>
+        <a href="#jewellery" class="category-card">
+          <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=850&q=85" alt="Elegant jewellery">
+          <span>Jewellery <b>↗</b></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Clothing Products -->
+    <section class="section products-section" id="clothing">
+      <div class="section-heading">
+        <p class="eyebrow">DRESS LIKE YOU MEAN IT</p>
+        <h2>Women's Wear</h2>
+        <p>Pieces that make every moment a little more special.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">
+            <span class="tag">BESTSELLER</span>
+            <img src="WhatsApp Image 2026-10-12 at 1.48.47 PM (1).jpeg" alt="Elegant women's dress">
+          </div>
+          <div class="product-info">
+            <h3>Midnight elegance Maxi Frock</h3>
+            <p>Women's Wear</p>
+            <p>Colour : Black</p>
+            <div class="product-bottom">
+              <strong>LKR 6,500</strong>
+              <button onclick="addToCart(1)" class="add-button">+ Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="WhatsApp Image 2026-10-12 at 1.48.47 PM.jpeg" alt="Women's chic outfit">
+          </div>
+          <div class="product-info">
+            <h3>Ruby Rose Maxi Frock</h3>
+            <p>Women's Wear</p>
+            <p>Colour : Meroom</p>
+            <div class="product-bottom">
+              <strong>LKR 6,500</strong>
+              <button onclick="addToCart(2)" class="add-button">+ Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <span class="tag">NEW</span>
+            <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=650&q=85" alt="Stylish women's clothing">
+          </div>
+          <div class="product-info">
+            <h3>Modern Style Dress</h3>
+            <p>Women's Wear</p>
+            <div class="product-bottom">
+              <strong>LKR 3,800</strong>
+              <button onclick="addToCart(3)" class="add-button">+ Add</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Jewellery -->
+    <section class="section jewellery-section" id="jewellery">
+      <div class="section-heading">
+        <p class="eyebrow">THE PERFECT FINISH</p>
+        <h2>Jewellery Collection</h2>
+        <p>Little details. Lasting impressions.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=650&q=85" alt="Gold jewellery">
+          </div>
+          <div class="product-info">
+            <h3>Golden Elegance Set</h3>
+            <p>Jewellery</p>
+            <div class="product-bottom">
+              <strong>LKR 1,850</strong>
+              <button onclick="addToCart(4)" class="add-button">+ Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=650&q=85" alt="Elegant bracelets">
+          </div>
+          <div class="product-info">
+            <h3>Classic Bracelet</h3>
+            <p>Jewellery</p>
+            <div class="product-bottom">
+              <strong>LKR 1,250</strong>
+              <button onclick="addToCart(5)" class="add-button">+ Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=650&q=85" alt="Fashion earrings">
+          </div>
+          <div class="product-info">
+            <h3>Statement Earrings</h3>
+            <p>Jewellery</p>
+            <div class="product-bottom">
+              <strong>LKR 950</strong>
+              <button onclick="addToCart(6)" class="add-button">+ Add</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Brand Story -->
+    <section class="about section" id="about">
+      <p class="eyebrow">MORE THAN FASHION</p>
+      <h2>Made for the woman<br>who <em>owns her story.</em></h2>
+      <p>
+        At URBAN VOGUE, we believe style is a way to express
+        who you are. Explore thoughtfully selected women's wear
+        and jewellery that celebrate your individuality.
+      </p>
+      <a href="#clothing" class="btn">DISCOVER YOUR STYLE</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="#home" class="logo">URBAN <span>VOGUE</span></a>
+    <p>Wear confidence. Shine effortlessly.</p>
+    <p class="copyright">© 2026 URBAN VOGUE. All rights reserved.</p>
+  </footer>
+
+  <!-- Shopping Cart -->
+  <div class="cart-overlay" id="cart-overlay" onclick="closeCartOutside(event)">
+    <div class="cart-panel">
+      <div class="cart-header">
+        <h2>Your Shopping Bag</h2>
+        <button class="close-button" onclick="toggleCart()">✕</button>
+      </div>
+
+      <div id="cart-items">
+        <p class="empty-cart">Your bag is waiting for something beautiful.</p>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cart-total">LKR 0</strong>
+        </div>
+        <button class="btn checkout-button" onclick="checkout()">
+          CONTINUE TO CHECKOUT →
+        </button>
+        <p class="checkout-note">Checkout is a demo until payment and order processing are connected.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+   const products = {
+  1: {
+    name: "Midnight elegance Maxi Frock",
+    color:"black",
+    price: 6500,
+    image: "WhatsApp Image 2026-10-12 at 1.48.47 PM (1).jpeg"
+  },
+  2: {
+    name: "Ruby Rose Maxi Frock",
+    colour:"Meroom",
+    price: 6500,
+    image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=650&q=85"
+  },
+  3: {
+    name: "Modern Style Dress",
+    colour:"Meroom",
+    price: 3800,
+    image: "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=650&q=85"
+  },
+  4: {
+    name: "Golden Elegance Set",
+    price: 1850,
+    image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=650&q=85"
+  },
+  5: {
+    name: "Classic Bracelet",
+    price: 1250,
+    image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=650&q=85"
+  },
+  6: {
+    name: "Statement Earrings",
+    price: 950,
+    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=650&q=85"
+  }
+};
+
+    const cart = {};
+
+    function money(amount) {
+      return "LKR " + amount.toLocaleString("en-LK");
+    }
+
+    function addToCart(id) {
+      if (!cart[id]) cart[id] = 0;
+      cart[id]++;
+      updateCart();
+      document.getElementById("cart-count").textContent =
+        Object.values(cart).reduce((sum, qty) => sum + qty, 0);
+    }
+
+    function changeQuantity(id, change) {
+      cart[id] = (cart[id] || 0) + change;
+      if (cart[id] <= 0) delete cart[id];
+      updateCart();
+      document.getElementById("cart-count").textContent =
+        Object.values(cart).reduce((sum, qty) => sum + qty, 0);
+    }
+
+    function updateCart() {
+      const container = document.getElementById("cart-items");
+      const ids = Object.keys(cart);
+
+      if (!ids.length) {
+        container.innerHTML =
+          '<p class="empty-cart">Your bag is waiting for something beautiful.</p>';
+      } else {
+        container.innerHTML = ids.map(id => `
+          <div class="cart-item">
+            <div class="cart-item-info">
+              <h3>${products[id].name}</h3>
+              <p>${money(products[id].price)}</p>
+              <div class="quantity">
+                <button onclick="changeQuantity(${id}, -1)">−</button>
+                <span>${cart[id]}</span>
+                <button onclick="changeQuantity(${id}, 1)">+</button>
+              </div>
+            </div>
+            <strong>${money(products[id].price * cart[id])}</strong>
+          </div>
+        `).join("");
+      }
+
+      const total = ids.reduce(
+        (sum, id) => sum + products[id].price * cart[id], 0
+      );
+      document.getElementById("cart-total").textContent = money(total);
+      document.getElementById("cart-count").textContent =
+        Object.values(cart).reduce((sum, qty) => sum + qty, 0);
+    }
+
+    function toggleCart() {
+      document.getElementById("cart-overlay").classList.toggle("active");
+    }
+
+    function closeCartOutside(event) {
+      if (event.target.id === "cart-overlay") toggleCart();
+    }
+   
+function checkout() {
+  const phoneNumber = "94710613299";
+  const ids = Object.keys(cart);
+
+  if (ids.length === 0) {
+    alert("Please add a product to your shopping bag first!");
+    return;
+  }
+
+  let message = "Hello URBAN VOGUE! ❤️\n\n";
+  message += "I would like to place an order. 🛍️\n\n";
+
+  ids.forEach(id => {
+    const product = products[id];
+    const quantity = cart[id];
+
+    message += "👗 Product: " + product.name + "\n";
+    message += "💰 Price: " + money(product.price) + "\n";
+    message += "🔢 Quantity: " + quantity + "\n";
+    message += "💵 Subtotal: " +
+      money(product.price * quantity) + "\n";
+
+    message += "📸 Product Photo: " +
+      new URL(product.image, document.baseURI).href + "\n\n";
+  });
+
+  const total = ids.reduce(
+    (sum, id) => sum + products[id].price * cart[id],
+    0
+  );
+
+  message += "🛒 Total: " + money(total) + "\n\n";
+  message += "Please confirm my order. Thank you! ❤️";
+
+  const whatsappURL =
+    "https://wa.me/" + phoneNumber +
+    "?text=" + encodeURIComponent(message);
+
+  window.location.href = whatsappURL;
+}
+</script>
+
+
+      
+ 
+
+</body>
+</html>
