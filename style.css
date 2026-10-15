@@ -575,3 +575,35 @@ h1 em, h2 em {
     height: 190px;
   }
 }
+/* Mobile product card layout fix */
+@media (max-width: 600px) {
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .product-card {
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .product-card h3 {
+    font-size: 14px;
+    overflow-wrap: anywhere;
+  }
+
+  .product-card button,
+  .product-card .btn {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
